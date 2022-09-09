@@ -3,6 +3,11 @@ variable "aws_region" {
   type        = string
 }
 
+variable "engine_version" {
+  description = "The engine version of the DB"
+  type        = string
+}
+
 variable "name" {
   description = "The name of the DB"
   type        = string

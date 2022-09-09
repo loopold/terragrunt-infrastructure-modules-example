@@ -26,7 +26,7 @@ terraform {
 
 resource "aws_db_instance" "mysql" {
   engine         = "mysql"
-  engine_version = "5.6.41"
+  engine_version = var.engine_version
 
   name     = var.name
   username = var.master_username
